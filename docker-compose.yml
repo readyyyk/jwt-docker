@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+
+  client:
+    container_name: jwt-client
+    build: ./client
+    ports:
+      - 4110:4110
+
+  server:
+    container_name: jwt-server
+    build: ./server
+    ports:
+      - 4111:4111
+
+  db:
+    container_name: jwt-db
+    image: clue/json-server
+    ports:
+      - 4112:80
+    volumes:
+      - ./db/db.json:/data/db.json

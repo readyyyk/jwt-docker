@@ -1,0 +1,39 @@
+.content {
+    min-width: min(90vw, 500px);
+    height: min-content;
+    background-color: #ebebf5;
+    padding: 2rem;
+    border-radius: 20px;
+}
+.userData {
+    display: flex;
+    flex-direction: column;
+}
+.userLogo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.userCredentials {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+.userName {
+    font-weight: bold;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+@media (width >= 500px) {
+    .userData {
+        flex-direction: row;
+    }
+    .userLogo {
+        margin-bottom: 0;
+    }
+}

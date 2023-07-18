@@ -1,0 +1,33 @@
+.header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    font-size: 1.5rem;
+    background-color: #c1c1c1;
+    padding-inline: 50px;
+}
+
+.groupLinks {
+    display: flex;
+    gap: 1.3rem;
+}
+
+.link {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (width <= 500px) {
+    .groupLinks {
+        gap: .7rem;
+    }
+    .link {
+        font-size: 20px !important;
+    }
+    header {
+        padding-inline: 1rem !important; /* !important used to overwrite default Ant-design value */
+    }
+}
